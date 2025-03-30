@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption & Decryption</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    
+    <div class="sidebar">
+        <button onclick="redirectTo('index.html')">🔐 Encryption</button>
+        <button onclick="redirectTo('video.html')">📺 Videos</button>
+        
+
+        <button onclick="redirectTo('discussion.html')">💬 Discussion Board</button>
+       
+
+    </div>
+
+    
+    <div class="content">
+        <div class="container">
+            <h2>Enter Your Message</h2>
+            <input type="text" id="message" placeholder="Type a message here">
+            <br>
+            <h2>Shift Value</h2>
+            <input type="number" id="shift" placeholder="Enter shift (e.g., 3)">
+            <br>
+            <button onclick="encryptText()">Encrypt</button>
+            <button onclick="decryptText()">Decrypt</button>
+        
+            <h3 id="encrypted-output"></h3>
+            <h3 id="output"></h3>
+        
+            <script src="script.js"></script>
+        </div>
+    </div>
+
+</body>
+</html>
